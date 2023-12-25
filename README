@@ -1,0 +1,40 @@
+A Monte Carlo Pricer is a computational technique used in quantitative finance for pricing financial instruments, particularly options and derivatives. 
+It derives its name from the Monte Carlo method, a statistical simulation method that relies on random sampling to obtain numerical results.
+
+
+Overview
+This MATLAB project provides a Monte Carlo simulation-based approach for pricing different types of barrier options, including European Put Call, Down In, Down Out, Up In, Up Out, Double In, and Double Out options. 
+The code uses a geometric Brownian motion model to simulate stock price paths and calculates option payoffs based on specific barrier conditions. The Arithmetic method and Sobol Sequence scripts implement variance reduction methods
+in order to improve the accuracy of results.
+
+Option Types
+European Put Call
+Down In
+Down Out
+Up In
+Up Out
+Double In
+Double Out
+For each option type, the code calculates option prices by simulating stock price paths and evaluating option payoffs according to the specified barrier conditions.
+
+Simulation Parameters
+Stock Price (S0): Initial price of the stock.
+Volatility (V): Volatility of the stock.
+Strike Price (K): Strike price of the option.
+Barriers (H, U, L): Barrier levels for different types of barrier options.
+Risk-Free Rate (r): Risk-free interest rate.
+Maturity (T): Time to maturity.
+Number of Paths (NoPath): Number of simulated paths.
+Number of Monitoring Steps (NoSteps): Number of monitoring steps for each path.
+Time Interval (TI): Time interval between monitoring steps.
+
+Usage
+Clone the repository:
+
+Copy code
+Open the MATLAB script (barrier_option_pricing.m) in MATLAB or any compatible MATLAB editor.
+Customize simulation parameters as needed.
+Run the script to obtain option prices.
+
+Results
+The script outputs the estimated prices for call (C) and put (P) options based on the specified barrier conditions and simulation parameters.
